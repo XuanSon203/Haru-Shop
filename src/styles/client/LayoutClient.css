@@ -1,0 +1,102 @@
+/* Header nền xanh nhẹ */
+.header {
+  background-color: #4b76b6;
+  /* Xanh dịu */
+}
+
+/* Màu chữ mặc định */
+.menu-button,
+.menu-button .dropdown-toggle {
+  font-weight    : 600 !important;
+  color          : #000000 !important;
+  /* Trắng ngà để dịu mắt hơn trắng tinh */
+  font-size      : 16px !important;
+  text-decoration: none !important;
+  transition     : color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+
+/* Hover menu chính */
+.menu-button:hover,
+.menu-button .dropdown-toggle:hover {
+  color           : #fffdf6 !important;
+  /* Vàng nhạt sang trọng */
+  background-color: transparent !important;
+}
+
+/* Hover dropdown item */
+.dropdown-menu .dropdown-item {
+  font-weight: 500;
+  color      : #333 !important;
+  /* Chữ xám đậm */
+  transition : background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color           : #ffffff !important;
+  /* Chữ trắng khi hover */
+  background-color: #4b76b6 !important;
+  /* Nền xanh đồng bộ */
+}
+
+.card {
+  transition   : transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow     : hidden;
+}
+
+.card:hover {
+  transform       : scale(1.05) translateY(-5px);
+  box-shadow      : 0 15px 25px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+  border          : 1px solid #ddd;
+}
+
+.custom-offcanvas {
+  position: fixed !important;
+  top     : 60px;
+  /* chiều cao Header của bạn */
+  left    : 0;
+  height  : calc(100vh - 60px);
+  z-index : 1050;
+}
+
+.footer {
+  background-color: #0d1117;
+}
+
+.logo-text {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  font-size  : 1.5rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding   : 0;
+  margin    : 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+  color        : #ccc;
+}
+
+.footer-links a {
+  color          : #ccc;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color          : #ffffff;
+  text-decoration: underline;
+}
+
+.social-icons a {
+  color     : white;
+  font-size : 1.2rem;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0d6efd;
+}
